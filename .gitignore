@@ -1,0 +1,41 @@
+# Ignore executable files
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore build directories
+/build/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+~*
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache (if any)
+__pycache__/
+*.pyc
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore other common files
+*.swp
+*.bak
+*.old
