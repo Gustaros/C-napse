@@ -2,28 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include "activation_f.h"
+#include "config.h"
 
-// Определяем архитектуру сети
-#define NUM_INPUTS 2
-#define NUM_HIDDEN_NODES 2
-#define NUM_OUTPUTS 1
-
-// Определяем параметры обучения
-#define NUM_TRAINING_SETS 4
-#define LEARNING_RATE 0.1
-#define NUM_EPOCHS 10000
-
-// --- Функции активации ---
-
-// Сигмоида
-double sigmoid(double x) {
-    return 1.0 / (1.0 + exp(-x));
-}
-
-// Производная сигмоиды (нужна для backpropagation)
-double sigmoid_derivative(double x) {
-    return x * (1.0 - x);
-}
 
 // --- Глобальные переменные для сети ---
 
